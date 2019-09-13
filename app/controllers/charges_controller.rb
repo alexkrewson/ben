@@ -10,10 +10,10 @@ class ChargesController < ApplicationController
 			:card => params[:stripeToken]
 		)
 
-		charge = Stripe::Charege.create(
+		charge = Stripe::Charge.create(
 			:customer		 	=> customer.id,
 			:amount				=> @amount,
-			:desctiption	=> 'Ben\'s 3D Printer Monitor',
+			:description	=> 'Ben\'s 3D Printer Monitor',
 			:currency			=> 'usd'
 		)
 
