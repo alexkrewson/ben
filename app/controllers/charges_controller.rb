@@ -5,6 +5,10 @@ class ChargesController < ApplicationController
 	def index
 	end
 
+	def hello
+		render html: "Ben's 3D Printer Monitor (from charges controller)"
+	end
+
 	def create
 		#amount in cents
 		@amount = 2500
