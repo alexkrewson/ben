@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   resources :charges
-  root 'charges#index'
+  root to: 'charges#index'
 
 end
