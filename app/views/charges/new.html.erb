@@ -3,6 +3,7 @@
 		<label class="amount">
 			<span>Amount: $25.00</span>
 		</label>
+		<br><br>
 	</article>
 
 	<script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
@@ -10,4 +11,5 @@
 					data-description="One 3D Printer Monitor"
 					data-amount="2500"></script>
 <% end %>
-
+<br>
+<%= link_to "main page", charges_path %>
